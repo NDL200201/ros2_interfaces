@@ -1,0 +1,460 @@
+<?xml version="1.0" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ros2_bot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0019935805044973 0.000333670681230025 -0.00811733174741469"
+        rpy="0 0 0" />
+      <mass
+        value="0.369143188982664" />
+      <inertia
+        ixx="0.000304133658216796"
+        ixy="-8.81084700296521E-09"
+        ixz="2.14153041155401E-08"
+        iyy="0.000747479350329666"
+        iyz="-4.73118599740384E-10"
+        izz="0.00103033015392302" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="base_link">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Pioneer2Body</material>
+  </gazebo>
+  <link
+    name="left_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.000441438087349283 -8.92755449260485E-05 0.00445900766244345"
+        rpy="0 0 0" />
+      <mass
+        value="0.0790308218125707" />
+      <inertia
+        ixx="2.82165613928051E-05"
+        ixy="-4.22436916213725E-09"
+        ixz="-2.79790374684897E-10"
+        iyy="2.81844841451266E-05"
+        iyz="-4.0103399023875E-11"
+        izz="4.60803895919818E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/left_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/left_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="left_wheel_link">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+  <joint
+    name="left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0710151540662201 -0.0910000000000003 -0.0417600000000003"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel_link" />
+    <axis
+      xyz="-0.000109890109227877 0 0.999999993962082" />
+  </joint>
+  <link
+    name="right_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.000222958641083681 0.000391314646544905 -0.00445900765995444"
+        rpy="0 0 0" />
+      <mass
+        value="0.0790308218254437" />
+      <inertia
+        ixx="2.81941641583814E-05"
+        ixy="1.53183153539912E-08"
+        ixz="2.14167588034319E-10"
+        iyy="2.82068813849732E-05"
+        iyz="1.84453148031006E-10"
+        izz="4.60803895935091E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/right_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/right_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="right_wheel_link">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+  <joint
+    name="right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0710351540662204 0.0910000000000001 -0.0417600000000005"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel_link" />
+    <axis
+      xyz="-0.000109890109227877 0 0.999999993962082" />
+  </joint>
+  <link
+    name="base_caster_link">
+    <inertial>
+      <origin
+        xyz="-0.0065484535252593 -0.00020809110351333 -0.00577858701291478"
+        rpy="0 0 0" />
+      <mass
+        value="0.0161823654839401" />
+      <inertia
+        ixx="1.28095639737182E-06"
+        ixy="-9.77267564468164E-10"
+        ixz="-2.48052318082804E-07"
+        iyy="1.34725618564923E-06"
+        iyz="-2.45566862777381E-09"
+        izz="1.71845940906856E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/base_caster_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.63921568627451 0.666666666666667 0.67843137254902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/base_caster_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="base_caster_link">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+  <joint
+    name="base_caster_joint"
+    type="continuous">
+    <origin
+      xyz="0.0909748459337795 0 -0.0484999999999999"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="base_caster_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="wheel_caster_link">
+    <inertial>
+      <origin
+        xyz="-2.62037058718079E-11 2.77710066054482E-09 -1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.00828739992319073" />
+      <inertia
+        ixx="6.39299912774582E-07"
+        ixy="-3.50834634007131E-09"
+        ixz="5.17881382745752E-22"
+        iyy="1.01108533248037E-06"
+        iyz="-2.70694466684209E-22"
+        izz="6.39266809275768E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/wheel_caster_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/wheel_caster_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="wheel_caster_link">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+  <joint
+    name="wheel_caster_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0150142056791568 -0.000141668664297767 -0.0164601469749998"
+      rpy="0 0 0" />
+    <parent
+      link="base_caster_link" />
+    <child
+      link="wheel_caster_link" />
+    <axis
+      xyz="-0.0094352216341657 0.999955487305667 0" />
+  </joint>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="-0.00425419155483209 -0.00164664450896773 -0.00183665109978204"
+        rpy="0 0 0" />
+      <mass
+        value="0.0447468642477995" />
+      <inertia
+        ixx="2.72781599481406E-05"
+        ixy="2.44504296442237E-07"
+        ixz="-1.09534991124129E-09"
+        iyy="3.94486671469707E-06"
+        iyz="-3.09966938459706E-09"
+        izz="2.73626707372897E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ros2_bot/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.112129156912968 0.00189215941669696 0.046276321689579"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <joint name="camera_optical_joint" type="fixed">
+        <parent link="camera_link"/>
+        <child link="camera_link_optical"/>
+        <origin xyz="0 0 0" rpy="-1.57 0 -1.57"/>
+    </joint>
+
+    <link name="camera_link_optical"></link>
+  <gazebo>
+    <plugin name="two_wheeled_robot_diff_drive" filename="libgazebo_ros_diff_drive.so">
+ 
+      <update_rate>100</update_rate>
+      
+      <!-- wheels -->
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_caster_joint>wheel_caster_joint</wheel_caster_joint>
+      <!-- kinematics -->
+      <wheel_separation>0.1635</wheel_separation>
+      <wheel_diameter>0.06</wheel_diameter>
+ 
+      <!-- limits -->
+      <max_wheel_torque>20</max_wheel_torque>
+      <max_wheel_acceleration>20.0</max_wheel_acceleration>
+ 
+      <!-- Receive velocity commands on this ROS topic -->
+      <command_topic>cmd_vel</command_topic>
+ 
+      <!-- output -->
+      <!-- When false, publish no wheel odometry data to a ROS topic -->
+      <publish_odom>true</publish_odom>
+ 
+      <!-- When true, publish coordinate transform from odom to base_footprint -->
+      <!-- I usually use the robot_localization package to publish this transform -->  
+      <publish_odom_tf>true</publish_odom_tf>
+     
+      <!-- When true, publish coordinate transform from base_link to the wheels -->
+      <!-- The robot_state_publisher package is often used to publish this transform -->  
+      <publish_wheel_tf>true</publish_wheel_tf>
+ 
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom_link</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+ 
+      <odometry_source>1</odometry_source>
+      <ros>
+        <remapping>odom:=wheel/odometry</remapping>
+      </ros>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="gazebo_ros_joint_state_publisher"
+        filename="libgazebo_ros_joint_state_publisher.so">
+        <update_rate>100</update_rate>
+        <joint_name>base_caster_joint</joint_name>
+        <joint_name>wheel_caster_joint</joint_name>
+    </plugin>
+  </gazebo>
+  <gazebo reference="camera_link">
+        <material>Gazebo/Gray</material>
+
+        <sensor name="camera" type="depth">
+            <pose> 0 0 0 0 0 0 </pose>
+            <visualize>true</visualize>
+            <update_rate>10</update_rate>
+            <camera>
+                <horizontal_fov>1.089</horizontal_fov>
+                <image>
+                    <format>B8G8R8</format>
+                    <width>640</width>
+                    <height>480</height>
+                </image>
+                <clip>
+                    <near>0.05</near>
+                    <far>8.0</far>
+                </clip>
+            </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <frame_name>camera_link_optical</frame_name>
+                <min_depth>0.1</min_depth>
+                <max_depth>100.0</max_depth>
+            </plugin>
+        </sensor>
+    </gazebo>
+    
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="left_wheel_joint">
+            <command_interface name="velocity">
+                <param name="min">-10</param>
+                <param name="max">10</param>
+            </command_interface>
+            <state_interface name="position" />
+            <state_interface name="velocity" />
+        </joint>
+        <joint name="right_wheel_joint">
+            <command_interface name="velocity">
+                <param name="min">-10</param>
+                <param name="max">10</param>
+            </command_interface>
+            <state_interface name="velocity" />
+            <state_interface name="position" />
+        </joint>
+    </ros2_control>
+
+    <!-- <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+        <parameters>$(find ros2_bot)/config/my_controllers.yaml</parameters>
+    </plugin>
+    </gazebo> -->
+  
+</robot>

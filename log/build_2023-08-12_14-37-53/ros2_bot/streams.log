@@ -1,0 +1,45 @@
+[0.574s] Invoking command in '/home/server/pc_ws/src/ros2_bot/ros2_bot': PYTHONPATH=/home/server/pc_ws/build/ros2_bot/prefix_override:/home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_bot build --build-base /home/server/pc_ws/build/ros2_bot/build install --record /home/server/pc_ws/build/ros2_bot/install.log --single-version-externally-managed
+[0.799s] running egg_info
+[0.799s] creating ../../../build/ros2_bot/ros2_bot.egg-info
+[0.799s] writing ../../../build/ros2_bot/ros2_bot.egg-info/PKG-INFO
+[0.800s] writing dependency_links to ../../../build/ros2_bot/ros2_bot.egg-info/dependency_links.txt
+[0.800s] writing entry points to ../../../build/ros2_bot/ros2_bot.egg-info/entry_points.txt
+[0.800s] writing requirements to ../../../build/ros2_bot/ros2_bot.egg-info/requires.txt
+[0.800s] writing top-level names to ../../../build/ros2_bot/ros2_bot.egg-info/top_level.txt
+[0.800s] writing manifest file '../../../build/ros2_bot/ros2_bot.egg-info/SOURCES.txt'
+[0.801s] reading manifest file '../../../build/ros2_bot/ros2_bot.egg-info/SOURCES.txt'
+[0.802s] writing manifest file '../../../build/ros2_bot/ros2_bot.egg-info/SOURCES.txt'
+[0.802s] running build
+[0.802s] running build_py
+[0.802s] creating /home/server/pc_ws/build/ros2_bot/build
+[0.802s] creating /home/server/pc_ws/build/ros2_bot/build/lib
+[0.802s] creating /home/server/pc_ws/build/ros2_bot/build/lib/ros2_bot
+[0.802s] copying ros2_bot/__init__.py -> /home/server/pc_ws/build/ros2_bot/build/lib/ros2_bot
+[0.803s] running install
+[0.803s] running install_lib
+[0.803s] creating /home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages/ros2_bot
+[0.803s] copying /home/server/pc_ws/build/ros2_bot/build/lib/ros2_bot/__init__.py -> /home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages/ros2_bot
+[0.804s] byte-compiling /home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages/ros2_bot/__init__.py to __init__.cpython-310.pyc
+[0.804s] running install_data
+[0.804s] creating /home/server/pc_ws/install/ros2_bot/share/ament_index
+[0.804s] creating /home/server/pc_ws/install/ros2_bot/share/ament_index/resource_index
+[0.805s] creating /home/server/pc_ws/install/ros2_bot/share/ament_index/resource_index/packages
+[0.805s] copying resource/ros2_bot -> /home/server/pc_ws/install/ros2_bot/share/ament_index/resource_index/packages
+[0.805s] copying package.xml -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot
+[0.805s] creating /home/server/pc_ws/install/ros2_bot/share/ros2_bot/urdf
+[0.805s] copying urdf/ros2_bot.urdf -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/urdf
+[0.805s] creating /home/server/pc_ws/install/ros2_bot/share/ros2_bot/launch
+[0.805s] copying launch/gazebo.launch.py -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/launch
+[0.805s] copying launch/display.launch.py -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/launch
+[0.805s] creating /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+[0.805s] copying meshes/left_wheel_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+[0.806s] copying meshes/right_wheel_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+[0.807s] copying meshes/camera_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+[0.807s] copying meshes/base_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+[0.812s] copying meshes/wheel_caster_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+[0.812s] copying meshes/base_caster_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+[0.812s] running install_egg_info
+[0.814s] Copying ../../../build/ros2_bot/ros2_bot.egg-info to /home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages/ros2_bot-0.0.0-py3.10.egg-info
+[0.815s] running install_scripts
+[0.832s] writing list of installed files to '/home/server/pc_ws/build/ros2_bot/install.log'
+[0.856s] Invoked command in '/home/server/pc_ws/src/ros2_bot/ros2_bot' returned '0': PYTHONPATH=/home/server/pc_ws/build/ros2_bot/prefix_override:/home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_bot build --build-base /home/server/pc_ws/build/ros2_bot/build install --record /home/server/pc_ws/build/ros2_bot/install.log --single-version-externally-managed

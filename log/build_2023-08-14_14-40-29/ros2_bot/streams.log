@@ -1,0 +1,21 @@
+[0.645s] Invoking command in '/home/server/pc_ws/src/ros2_bot/ros2_bot': PYTHONPATH=/home/server/pc_ws/build/ros2_bot/prefix_override:/home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_bot build --build-base /home/server/pc_ws/build/ros2_bot/build install --record /home/server/pc_ws/build/ros2_bot/install.log --single-version-externally-managed
+[0.882s] running egg_info
+[0.883s] writing ../../../build/ros2_bot/ros2_bot.egg-info/PKG-INFO
+[0.883s] writing dependency_links to ../../../build/ros2_bot/ros2_bot.egg-info/dependency_links.txt
+[0.883s] writing entry points to ../../../build/ros2_bot/ros2_bot.egg-info/entry_points.txt
+[0.884s] writing requirements to ../../../build/ros2_bot/ros2_bot.egg-info/requires.txt
+[0.884s] writing top-level names to ../../../build/ros2_bot/ros2_bot.egg-info/top_level.txt
+[0.885s] reading manifest file '../../../build/ros2_bot/ros2_bot.egg-info/SOURCES.txt'
+[0.886s] writing manifest file '../../../build/ros2_bot/ros2_bot.egg-info/SOURCES.txt'
+[0.886s] running build
+[0.886s] running build_py
+[0.886s] running install
+[0.886s] running install_lib
+[0.888s] running install_data
+[0.888s] copying launch/gazebo.launch.py -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/launch
+[0.888s] running install_egg_info
+[0.890s] removing '/home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages/ros2_bot-0.0.0-py3.10.egg-info' (and everything under it)
+[0.890s] Copying ../../../build/ros2_bot/ros2_bot.egg-info to /home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages/ros2_bot-0.0.0-py3.10.egg-info
+[0.891s] running install_scripts
+[0.909s] writing list of installed files to '/home/server/pc_ws/build/ros2_bot/install.log'
+[0.933s] Invoked command in '/home/server/pc_ws/src/ros2_bot/ros2_bot' returned '0': PYTHONPATH=/home/server/pc_ws/build/ros2_bot/prefix_override:/home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_bot build --build-base /home/server/pc_ws/build/ros2_bot/build install --record /home/server/pc_ws/build/ros2_bot/install.log --single-version-externally-managed

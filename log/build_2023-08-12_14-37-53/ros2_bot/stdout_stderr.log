@@ -1,0 +1,43 @@
+running egg_info
+creating ../../../build/ros2_bot/ros2_bot.egg-info
+writing ../../../build/ros2_bot/ros2_bot.egg-info/PKG-INFO
+writing dependency_links to ../../../build/ros2_bot/ros2_bot.egg-info/dependency_links.txt
+writing entry points to ../../../build/ros2_bot/ros2_bot.egg-info/entry_points.txt
+writing requirements to ../../../build/ros2_bot/ros2_bot.egg-info/requires.txt
+writing top-level names to ../../../build/ros2_bot/ros2_bot.egg-info/top_level.txt
+writing manifest file '../../../build/ros2_bot/ros2_bot.egg-info/SOURCES.txt'
+reading manifest file '../../../build/ros2_bot/ros2_bot.egg-info/SOURCES.txt'
+writing manifest file '../../../build/ros2_bot/ros2_bot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/server/pc_ws/build/ros2_bot/build
+creating /home/server/pc_ws/build/ros2_bot/build/lib
+creating /home/server/pc_ws/build/ros2_bot/build/lib/ros2_bot
+copying ros2_bot/__init__.py -> /home/server/pc_ws/build/ros2_bot/build/lib/ros2_bot
+running install
+running install_lib
+creating /home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages/ros2_bot
+copying /home/server/pc_ws/build/ros2_bot/build/lib/ros2_bot/__init__.py -> /home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages/ros2_bot
+byte-compiling /home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages/ros2_bot/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/server/pc_ws/install/ros2_bot/share/ament_index
+creating /home/server/pc_ws/install/ros2_bot/share/ament_index/resource_index
+creating /home/server/pc_ws/install/ros2_bot/share/ament_index/resource_index/packages
+copying resource/ros2_bot -> /home/server/pc_ws/install/ros2_bot/share/ament_index/resource_index/packages
+copying package.xml -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot
+creating /home/server/pc_ws/install/ros2_bot/share/ros2_bot/urdf
+copying urdf/ros2_bot.urdf -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/urdf
+creating /home/server/pc_ws/install/ros2_bot/share/ros2_bot/launch
+copying launch/gazebo.launch.py -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/launch
+copying launch/display.launch.py -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/launch
+creating /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+copying meshes/left_wheel_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+copying meshes/right_wheel_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+copying meshes/camera_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+copying meshes/base_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+copying meshes/wheel_caster_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+copying meshes/base_caster_link.STL -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/meshes
+running install_egg_info
+Copying ../../../build/ros2_bot/ros2_bot.egg-info to /home/server/pc_ws/install/ros2_bot/lib/python3.10/site-packages/ros2_bot-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/server/pc_ws/build/ros2_bot/install.log'

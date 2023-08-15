@@ -1,0 +1,15 @@
+running egg_info
+writing ../../../build/ros2_bot/ros2_bot.egg-info/PKG-INFO
+writing dependency_links to ../../../build/ros2_bot/ros2_bot.egg-info/dependency_links.txt
+writing entry points to ../../../build/ros2_bot/ros2_bot.egg-info/entry_points.txt
+writing requirements to ../../../build/ros2_bot/ros2_bot.egg-info/requires.txt
+writing top-level names to ../../../build/ros2_bot/ros2_bot.egg-info/top_level.txt
+reading manifest file '../../../build/ros2_bot/ros2_bot.egg-info/SOURCES.txt'
+writing manifest file '../../../build/ros2_bot/ros2_bot.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/display.launch.py -> /home/server/pc_ws/install/ros2_bot/share/ros2_bot/launch
+error: can't copy 'ros2_bot/urdf/config/my_controllers.yaml': doesn't exist or not a regular file
